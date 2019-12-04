@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coding Assignment</title>
+</head>
+<style>
+  h1 {text-align: center;}
+  h1 {border: 2px solid black;}
+  h1 {background-color: lightgreen;}
+  body {background-color: #FDFF96;}
+
+  img.animation {
+    box-shadow: 5px 5px;
+    position: relative;
+    animation-name: testanimation;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 25px;
+  }
+
+  @keyframes testanimation {
+    0%  {transform: rotate(0deg); left: 0px; top: 0px; width: 400px;box-shadow: 5px 5px 16px grey;}
+    25% {transform: rotate(90deg); left: 200px; top: 0px;box-shadow: 15px 15px 16px grey;}
+    50% {transform: rotate(180deg); left: 200px; top: 200px; width: 800px;box-shadow: 25px 25px 16px grey;}
+    75% {transform: rotate(270deg); left: 0px; top: 200px;box-shadow: 15px 15px 16px grey;}
+    100%{transform: rotate(360deg); left: 0px; top: 0px; width: 400px;box-shadow: 5px 5px 16px grey;}
+  }
+
+  h1:hover
+  {
+    background-color: yellow;
+  }
+  #grad1 {
+    height: 150px;
+    width: 200px;
+    background-color: red;
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+  }
+}
+</style>
+<body>
+  <h1>Coding Assignment 1</h1>
+
+  <img class="animation" src="040211_city-lunch.jpg" alt="Empire State Building Lunch break">
+  <br><br><br><br><br><br><br><br><br><br><br>
+  <div id="grad1"></div>
+
+</body>
+</html>
